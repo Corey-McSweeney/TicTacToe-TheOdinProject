@@ -66,11 +66,7 @@ const gameController = (() => {
 
   // Function to change turns
   function switchPlayer() {
-    if (currentPlayerIndex === 0) {
-      currentPlayerIndex = 1;
-    } else {
-      currentPlayerIndex = 0;
-    }
+    currentPlayerIndex = currentPlayerIndex === 0 ? 1 : 0;
   }
 
   // Function to check winner
