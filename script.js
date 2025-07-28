@@ -1,4 +1,4 @@
-// Create the gameboard
+// Create the gameboard IIFE
 const Gameboard = (() => {
   let board = ["", "", "", "", "", "", "", "", ""];
   return {
@@ -10,3 +10,16 @@ const Gameboard = (() => {
   };
 })();
 console.log(Gameboard.getBoard());
+
+// Create a Player factory
+function createPlayer(name, mark) {
+  console.log(name + " has been added as a player, with the mark: " + mark);
+
+  return {
+    name,
+    mark,
+    // Getters for future use
+    getName: () => name,
+    getMark: () => mark,
+  };
+}
