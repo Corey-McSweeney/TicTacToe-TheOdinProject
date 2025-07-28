@@ -9,13 +9,29 @@ body {
   font-size: 4rem;
 }
 
-#winner-state,
-#newgame-btn {
+#newgame-btn,
+.winner-state {
   /* Style the Buttons */
   margin-bottom: 20px;
   font-size: 2.5rem;
   padding: 15px 30px;
   border-radius: 15px;
+  border: 2px solid #ccc;
+  border-color: black;
+  background-color: white;
+}
+
+#newgame-btn {
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+#newgame-btn:hover {
+  background-color: #f0f0f0;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .btn-container {
